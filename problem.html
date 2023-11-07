@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorry</title>
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/cyborg/bootstrap.min.css"
+    />
+    <style>
+      #disclaimer-cover {
+  width: 200px;
+  height: 266px;
+  margin: 0 auto;
+  background: transparent
+    url(https://1.bp.blogspot.com/-QUskAuOwOT0/W6K0ypWnV8I/AAAAAAAACo8/FYf_r44V-ZQBHLeEittCP3l7D102WaotACPcBGAYYCw/s1600/disclaimer13.png)
+    no-repeat top left;
+}
+.disclaimer-outer {
+  width: 150px;
+  height: 150px;
+  border: none;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  top: 80px;
+  left: 25px;
+  font-family: Verdana;
+  font-size: 13px;
+  background-color: trasparent;
+  color: #000;
+}
+.disclaimer-inner {
+  position: absolute;
+  width: 100%;
+  height: 570px;
+  margin-top: 0px;
+  text-align: center;
+  /* Posizione di partenza */
+  transform: translateY(100%);
+  /* Applica animazione all'elemento */
+  animation: scroll-up 25s linear 1s infinite normal none running;
+}
+/* Move it (definisce l'animazione) */
+@keyframes scroll-up {
+  0% {
+    transform: translateY(30%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+/* Mette in pausa l'animazione al passaggio del mouse */
+.disclaimer-inner:hover {
+  cursor: pointer;
+  animation-play-state: paused;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="marquee">
+      <div>
+        <div id="disclaimer-cover">
+            <div class="disclaimer-outer">
+            <div class="disclaimer-inner">
+                <div style="margin-right: 0px; float: none; margin-bottom: 0px;">
+                Sorry I do not have access, Thank you
+                </div> 
+            </div>
+            </div>
+            </div>
+      </div>
+    </div>
+  </body>
+</html>
